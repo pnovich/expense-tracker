@@ -1,0 +1,40 @@
+<mat-sidenav-container class = "sidebarcontainer">
+  <mat-sidenav
+  #sidenav
+  mode="side"
+  opened="true"
+  class="sidenav">
+    sidebar
+    <mat-nav-list>
+      <mat-list-item routerLink="/dashboard">
+        Dashboard
+      </mat-list-item>
+      <mat-list-item routerLink="/add-expense">
+        Add an expense
+      </mat-list-item>
+      <mat-list-item routerLink="/list">
+        Expense list
+      </mat-list-item>
+      <mat-list-item routerLink="/">
+        Contact
+      </mat-list-item>
+
+
+    </mat-nav-list>
+
+  </mat-sidenav>
+
+  <mat-sidenav-content class="main-content">
+    <mat-toolbar color="primary">
+      <button mat-icon-button (click) = "sidenav.toggle()">
+        <mat-icon>menu</mat-icon>
+      </button>
+      <span class="app-title">welcome to this page!</span>
+    </mat-toolbar>
+    <router-outlet />
+  </mat-sidenav-content>
+
+
+</mat-sidenav-container>
+
+

@@ -1,0 +1,29 @@
+{
+  "expenses": [
+    {"id": 1,
+    "title": "Resturant 1",
+    "category": "food",
+    "amount": 50,
+    "date":  "02-05-2025"},
+    {"id": 2,
+      "title": "Resturant 2",
+      "category": "food",
+      "amount": 50,
+      "date":  "02-05-2025"},
+    {"id": 3,
+      "title": "Resturant 3",
+      "category": "food",
+      "amount": 50,
+      "date":  "02-05-2025"},
+    {"id": 4,
+      "title": "Resturant 4",
+      "category": "food",
+      "amount": 50,
+      "date":  "02-05-2025"},
+    {"id": 5,
+      "title": "Resturant 5",
+      "category": "food",
+      "amount": 50,
+      "date":  "02-05-2025"}
+  ]
+}
