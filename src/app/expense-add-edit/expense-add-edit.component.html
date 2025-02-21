@@ -1,1 +1,66 @@
 <p>expense-add-edit works!</p>
+<mat-card class="add-edit-card">
+  <mat-card-header>
+    <mat-card-title>
+      Add/Edit expense
+     </mat-card-title>
+  </mat-card-header>
+  <mat-card-content>
+    <form [formGroup]="expenseForm" (ngSubmit) = "onSubmit()">
+      <div class = "form-group">
+        <div class = "form-row">
+          <mat-form-field>
+            <mat-label> Enter title</mat-label>
+            <input matInput formControlName="title"
+            placeholder="enter title"/>
+            <mat-error *ngIf="expenseForm.get('title')?.hasError('required')">
+              Enter title
+            </mat-error>
+          </mat-form-field>
+        </div>
+        <div class = "form-row">
+          <mat-form-field>
+            <mat-label> Select category</mat-label>
+            <mat-select formControlName="category">
+              <mat-option *ngFor="let category of categories" [value]="category">{{category}}</mat-option>
+            </mat-select>
+            <mat-error *ngIf="expenseForm.get('category')?.hasError('required')">
+              Select category
+            </mat-error>
+          </mat-form-field>
+        </div>
+        <div class = "form-row">
+          <mat-form-field>
+            <mat-label> Enter amount</mat-label>
+            <input matInput formControlName="amount"
+                   placeholder="enter amount"/>
+            <mat-error *ngIf="expenseForm.get('amount')?.hasError('required')">
+              Enter value amount
+            </mat-error>
+            <mat-error *ngIf="expenseForm.get('amount')?.hasError('min')">
+              Should be positive
+            </mat-error>
+
+          </mat-form-field>
+        </div>
+        <div class = "form-row">
+          <mat-form-field>
+            <mat-label> Enter date</mat-label>
+<!--            <input matInput formControlName="date" placeholder="enter date"/>-->
+            <input matInput [matDatepicker]="picker" formControlName="date" />
+            <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+            <mat-datepicker #picker></mat-datepicker>
+            <mat-error *ngIf="expenseForm.get('date')?.hasError('required')">
+              Enter title for expense
+            </mat-error>
+          </mat-form-field>
+        </div>
+
+      </div>
+    </form>
+  </mat-card-content>
+  <mat-card-actions>
+    <button mat-raised-button color="primary"
+            (click)="onSubmit()" [disabled]="expenseForm.invalid">Submit</button>
+  </mat-card-actions>
+</mat-card>

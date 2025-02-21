@@ -6,5 +6,6 @@ import {ExpenseListComponent} from './expense-list/expense-list.component';
 export const routes: Routes = [
   {path: 'add-expense', component: ExpenseAddEditComponent},
   {path: 'dashboard', component: ExpenseGridComponent},
-  {path: 'list', component: ExpenseListComponent}
+  {path: 'list', component: ExpenseListComponent},
+  {path: 'edit/:id', component: ExpenseAddEditComponent}
 ];
