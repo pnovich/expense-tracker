@@ -44,4 +44,13 @@ export class ExpenseGridComponent {
       this.totalItems = expenses.length;
     });
   }
+  onPageChange(event: any){
+    this.pageSize = event.pageSize;
+    this.dataSource.paginator = this.paginator;
+  }
+
+  ngAfterViewInit() {
+    this.dataSource.paginator = this.paginator;
+  }
+
 }
