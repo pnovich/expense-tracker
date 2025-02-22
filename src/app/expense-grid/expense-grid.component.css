@@ -8,13 +8,13 @@
 }
 
 .edit-btn {
-  background-color: lightblue;
-  color: #2f2f2f;
+  background-color: lightblue !important;
+  color: #2f2f2f !important;
 
 }
 
 .delete-btn {
-  background-color: lightcoral;
+  background-color: lightcoral !important;
   color: #fff;
 }
 

@@ -50,34 +50,6 @@
       "date": "02-05-2025"
     },
     {
-      "id": "8",
-      "title": "Resturant 3",
-      "category": "food",
-      "amount": 50,
-      "date": "02-05-2025"
-    },
-    {
-      "id": "9",
-      "title": "Resturant 4",
-      "category": "food",
-      "amount": 50,
-      "date": "02-05-2025"
-    },
-    {
-      "id": "10",
-      "title": "Resturant 5",
-      "category": "food",
-      "amount": 50,
-      "date": "02-05-2025"
-    },
-    {
-      "id": "11",
-      "title": "Resturant 1",
-      "category": "food",
-      "amount": 50,
-      "date": "02-05-2025"
-    },
-    {
       "id": "12",
       "title": "Resturant 2",
       "category": "food",
@@ -106,14 +78,14 @@
       "date": "02-05-2025"
     },
     {
-      "id": 1740172043088,
+      "id": "1740172043088",
       "title": "s",
       "category": "food",
       "amount": "1",
       "date": "2025-02-16T22:00:00.000Z"
     },
     {
-      "id": 1740172231232,
+      "id": "1740172231232",
       "title": "d",
       "category": "movies",
       "amount": "2",

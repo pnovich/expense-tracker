@@ -49,6 +49,13 @@ export class ExpenseGridComponent {
     this.dataSource.paginator = this.paginator;
   }
 
+  deleteExpense(expenseId: number) {
+    console.log("deleting with id ", expenseId);
+    this.expenseService.deleteExpense(expenseId);
+    this.snackBar.open("deleted suuccessfully");
+
+  }
+
   ngAfterViewInit() {
     this.dataSource.paginator = this.paginator;
   }
